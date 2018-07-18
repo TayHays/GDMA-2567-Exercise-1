@@ -17,8 +17,6 @@
 
 2.0 - Navigation Menus
 	2.1 - Main
-	2.2 - Sub
-	2.3 - Footer
 
 3.0 - Content
 	3.1 - Site Structure
@@ -33,47 +31,339 @@
 	5.3 - Alignments
 
 --------------------------------------------------------------*/
+ 
+*, h2 span {
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+	color: #a0a9b6;
+}
 
+.wrapper {
+	width: 1140px;
+}
 
+.wrapper, body > div:nth-child(2) div {
+	margin: 0 auto;
+}
+
+.row {
+	overflow: auto;
+}
+
+h1 span, footer section:last-child li span, caption, label:first-child {
+	display: none;
+}
+
+body > header li, footer section:last-child li, body > div:nth-child(3) p, div:nth-child(7) p, body > div:nth-child(5) ul, body > div:nth-child(5) p, th span {
+	display: inline-block;
+}
+
+body > div:nth-child(3) img, div:nth-child(7) img {
+	display: block;
+}
+
+h3, ul {
+	-webkit-margin-after: 0;
+}
+
+h2, h3, h4, p, ul {
+	-webkit-margin-before: 0;
+}
 
 /*--------------------------------------------------------------
 1.0 - Typography
 -------------------------------------------------------------- */
 
+
+nav ul, table, body > div:nth-child(2) div {
+	text-align: center;
+}
+
+nav li, nav ul, th, tfoot td, form p, body > div:nth-child(2), h2, h3, h4 {
+	text-transform: uppercase;
+}
+
+header span, p span, th:first-letter {
+	font-weight: 500;
+}
+
+body > div:nth-child(2) span {
+	font-weight: 700;
+	font-size: 35px;
+}
+
+nav a, body > div:nth-child(2) p, body > div:nth-child(2) span, form a, div:nth-child(5) section:last-child a, footer p span, h4, th span, tfoot a {
+	color: #fff;
+}
+
+footer section:last-child li {
+	padding-right: 16px;
+}
+
 /*	1.1 - Headings        */
+
+h3, h2 {
+	color: #556b72;
+	line-height: 1;
+}
+
+h3 {
+	margin-bottom: 5px;
+}
+
 /*	1.2 - Body Copy       */
+p {
+	line-height: 22px;
+}
+
+p, div:nth-child(5) li, h2 span, td, th, h4 {
+	font-size: 14px;
+}
+
 /*	1.3 - Buttons         */
+
+a {
+	text-decoration: none;
+}
+
+form a, div:nth-child(5) a, nav ul, tfoot a {
+	background-color: #ff8261;
+}
+
+form a, div:nth-child(5) a, tfoot a {
+	padding: 14px 40px;
+}
+
+footer a:hover, footer i:hover, header > div a:hover {
+	color: #52cbf8;
+}
+
 /*	1.4 - Forms           */
+
+select {
+	width: 150px;
+	padding: 12px; 
+}
+
+input {
+	padding: 14px 20px;
+}
+
+#domain-one {
+	width: 550px;
+}
+
+#domain-two {
+	width: 750px
+}
+
 /*	1.5 - Lists           */
+
+header ul span {
+	color: #484e57;
+}
+
+div:nth-child(5) li {
+	list-style-image: url("../img/bullet-right-angle.png");
+	padding-bottom: 16px;;
+}
+
 /*	1.6 - Tables          */
 
+td, th {
+	padding: 20px 0;
+	border: .5px solid #a0a9b6;;
+	vertical-align: top;
+	width: 266px;
+}
 
+th b, th:first-letter {
+	font-size: 40px;
+}
+
+table {
+	border-spacing: 15px 0px;
+}
+
+th span {
+	padding: 10px 20px;
+	margin-top: 15px;
+}
+
+tfoot td {
+	padding: 40px 40px;
+}
 
 /*--------------------------------------------------------------
 2.0 - Navigation Menus
 -------------------------------------------------------------- */
 
 /*	2.1 - Main             */
-/*	2.2 - Sub              */
-/*	2.3 - Footer           */
+
+nav li, nav li:hover {
+	padding: 20px 18px;
+}
+
+nav li:first-child {
+	padding: 20px 25px;
+}
+
+nav li:hover, th span, tfoot a:hover, form a:hover, div:nth-child(5) a:hover {
+	background-color: #52cbf8;
+}
 
 
 /*--------------------------------------------------------------
 3.0 - Content
 -------------------------------------------------------------- */
 
+header ul, footer ul {
+	list-style: none;
+}
+
+body > div:nth-child(3), body > div:nth-child(7) {
+	background-color: #e7f4f8;
+}
+
+body > div:nth-child(5) {
+	background-color: #fffbde;
+}
+
 /*	3.1 - Site Structure    */
+
+body > div, body > section {
+	padding: 50px 0;
+}
+
+body > div:nth-child(3) {
+	padding-top: 35px;
+}
+
+ul {
+	-webkit-padding-start: 0;
+}
+
+body > div:nth-child(2) div {
+	width: 423px;
+}
+
+body > section:nth-child(4) div div {
+	width: 245px;
+}
+
+section:nth-child(4) section:nth-child(2) {
+	margin-left: 50px;
+}
+
+section:nth-child(4) section {
+	width: 345px;
+}
+
+
+div:nth-child(5) section:first-child {
+	width: 510px;
+}
+
+div:nth-child(5) section:last-child {
+	width: 630px;
+}
+
+div:nth-child(5) section:last-child div {
+	padding: 0 0 10px 17px;
+}
+
+div:nth-child(5) section:last-child ul:first-child {
+	width: 250px;
+}
+
+div:nth-child(5) section:last-child ul:nth-child(2) {
+	width: 165px;
+	margin: 0 30px;
+}
+
+div:nth-child(5) p {
+	margin-top: 77px;
+}
+
 /*	3.2 - Site Header       */
+
+body > header {
+	padding-top: 20px;
+}
+
+header div:last-child li {
+	padding: 0 10px;
+}
+
+header div:last-child li:first-child, header div:last-child li:nth-child(2) {
+	border-right: 1px solid #e1e9f2;
+} 
+
+header div:last-child {
+	margin-top: 10px;
+	padding: 15px 0 15px 100px;
+}
+
+header div:last-child {
+	border: 1px solid #e1e9f2;
+}
+
 /*	3.3 - Site Footer       */
+
+body > div:last-child {
+	background-color: #4c515b;
+}
+
+footer section, footer > div {
+	width: 275px;
+}
+
+footer ul {
+	width: 137px;
+}
+
+footer ul, footer li {
+	padding-bottom: 10px;
+}
+
 
 /*--------------------------------------------------------------
 4.0 - Media
 -------------------------------------------------------------- */
 
+body > div:nth-child(2) {
+	background: url(../img/bg-hero.jpg) no-repeat center center;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding: 400px 0 100px;
+}
+
+
+section:nth-child(4) img {
+	width: 55px;
+}
+
+section:nth-child(4) .row:last-child section:last-child img {
+	width: 45px;
+}
+
 /*--------------------------------------------------------------
 5.0 - Utility
 -------------------------------------------------------------- */
 
-/*	5.1 - Text Sizes        */
-/*	5.2 - Colors            */
-/*	5.3 - Alignments        */
+.fl-l {
+	float: left;
+}
+
+.fl-r {
+	float: right;
+}
+
+
